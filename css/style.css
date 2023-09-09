@@ -1,0 +1,204 @@
+body {
+  background-color: lightskyblue;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: lightskyblue;
+  box-shadow: 0 2px 20px #333333;
+}
+
+.container {
+  display: flex;
+  min-height: 60vh;
+  margin: 0 auto 50px;
+  justify-content: center;
+}
+
+.loading-spinner {
+  top: 30%;
+  left: 50%;
+  z-index: 9;
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: fixed;
+  margin-left: -50px;
+  background: rgba(180, 187, 195, 0.9);
+}
+
+.navbar .container {
+  margin: 5px auto;
+  min-height: auto;
+}
+
+.webTitle {
+  background-image: url('../images/background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: #1c7ad7 solid 2px;
+  height: 58vh;
+}
+
+h1 {
+  color: #1c7ad7;
+  display: flex;
+  padding: 5rem;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 80%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #285151;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: whitesmoke;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #0b8a83;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #0b8a83;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.cryptoMoreInfo {
+  text-align: center;
+}
+
+.liveReports {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 600px;
+}
+
+.liveReports .charts {
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.card {
+  margin: 8px;
+}
+
+.titleCoinImg {
+  margin: 25px;
+}
+
+.modal-header {
+  background-color: #5a6e6e;
+}
+
+.modal-footer {
+  background-color: #5a6e6e;
+}
+
+.cardCollapseWrap {
+  border: 1px solid #171617;
+  margin: 10px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.cardCollapseWrap .spinner-border {
+  margin: auto;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.form-check-input {
+  clear: left;
+}
+
+.form-switch.form-switch-sm {
+  margin-bottom: 0.5rem;
+}
+
+.form-switch.form-switch-sm .form-check-input {
+  height: 1rem;
+  width: calc(1rem + 0.75rem);
+  border-radius: 2rem;
+}
+
+.aboutText {
+  max-width: 500px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.aboutText h4 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.rounded-circle {
+  margin: 0 10px 0 0;
+}
+
+.about {
+  display: none;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  box-shadow: 0 13px 13px;
+  padding: 10px;
+  height: fit-content;
+  width: 700px;
+}
+
+#aboutDiv {
+  margin: auto;
+  margin-bottom: 150px;
+}
